@@ -1,9 +1,9 @@
 spring:
-    profiles: dev
-    application:
-	name: config-dev-8888
+  profiles: dev
+  application:
+    name: config-dev-8888
 
 spring:
-    profiles: test
-    application:
-	name: config-test-8888
+  profiles: test
+  application:
+    name: config-test-8888
