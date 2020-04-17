@@ -1,7 +1,7 @@
 server:
   port: 8003
 spring:
-  profiles:dev
+  profiles: dev
   application:
     name: springcloud63-product
   datasource:
@@ -12,7 +12,7 @@ spring:
     password: 123456
 mybatis:
   config-location: classpath:mybatis-config.xml
-  
+
 eureka:
   client:
     service-url:
@@ -20,7 +20,7 @@ eureka:
   instance:
     instance-id: springcloud63-product-8003
     prefer-ip-address: true
-info: 
+info:
   app.name: this is my product module
   developer.name: xiangwei
   date: 2020.3.25
