@@ -1,0 +1,29 @@
+server:
+  port: 8003
+spring:
+  profiles:dev
+  application:
+    name: springcloud63-product
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/firm
+    username: root
+    password: 123456
+mybatis:
+  config-location: classpath:mybatis-config.xml
+  
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eurekaserver9001.com:9001/eureka/
+  instance:
+    instance-id: springcloud63-product-8003
+    prefer-ip-address: true
+info: 
+  app.name: this is my product module
+  developer.name: xiangwei
+  date: 2020.3.25
+  language: Java
+  ip: 192.168.3.9
+  port: 8002
